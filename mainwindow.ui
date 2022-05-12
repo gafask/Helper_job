@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1180</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string>999999</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="whatsThis">
+   <string>3</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="1" stdset="0">
+   <pixmap/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>254</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="avto_open_NULL_door_pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: rgb(138, 235, 154);
+background: rgb(16, 118, 19);
+}
+QPushButton:hover
+{
+color:rgb(217, 255, 208);
+background: rgb(16, 118, 19);
+}
+   </string>
+       </property>
+       <property name="text">
+        <string>Автоматическое открытие пустых ячеек</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="Avto_open_door_button">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: rgb(138, 235, 154);
+background: rgb(16, 118, 19);
+}
+QPushButton:hover
+{
+color:rgb(217, 255, 208);
+background: rgb(16, 118, 19);
+}
+   </string>
+       </property>
+       <property name="text">
+        <string>Автоматическое открытие ячеек   </string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QCheckBox" name="checkBox_avto_open_NULL_door">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="avto_open_full_door_pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: rgb(138, 235, 154);
+background: rgb(16, 118, 19);
+}
+QPushButton:hover
+{
+color:rgb(217, 255, 208);
+background: rgb(16, 118, 19);
+}
+   </string>
+       </property>
+       <property name="text">
+        <string>Автоматическое открытие занятых ячеек </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="mexanik_open_door_button">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: rgb(138, 235, 154);
+background: rgb(16, 118, 19);
+}
+QPushButton:hover
+{
+color:rgb(217, 255, 208);
+background: rgb(16, 118, 19);
+}
+   </string>
+       </property>
+       <property name="text">
+        <string>Ручное открытие ячеек</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QCheckBox" name="checkBox_avto_open_door">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="checkBox_mexanik_open_door">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QCheckBox" name="checkBox_avto_open_fukll_door">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="Steklo" native="true">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>40</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ForbiddenCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::NoContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>238</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="whatsThis">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Управление открытием&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>0</y>
+      <width>16</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="checkBox_mexanik_open_door_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_avto_open_door_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="autoRepeatDelay">
+        <number>300</number>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_avto_open_NULL_door_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_avto_open_fukll_door_3">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>40</y>
+      <width>256</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="mishka_color">
+       <property name="text">
+        <string>Мышка</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Поехали</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>140</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_KO">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>113</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>12</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>300</y>
+      <width>471</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(138, 235, 154);
+background: rgb(16, 118, 19);
+}
+QPushButton:hover
+{
+color:rgb(217, 255, 208);
+background: rgb(16, 118, 19);
+}
+   </string>
+    </property>
+    <property name="text">
+     <string>тест</string>
+    </property>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>splitter</zorder>
+   <zorder>Steklo</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>lineEdit_KO</zorder>
+   <zorder>pushButton_4</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="statusTip">
+    <string>Чо по ошибкам ? </string>
+   </property>
+   <property name="whatsThis">
+    <string>0</string>
+   </property>
+   <property name="accessibleName">
+    <string>0</string>
+   </property>
+   <property name="accessibleDescription">
+    <string>0</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>mexanik_open_door_button</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_mexanik_open_door_3</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Avto_open_door_button</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_avto_open_door_3</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>avto_open_NULL_door_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_avto_open_NULL_door_3</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>avto_open_full_door_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_avto_open_fukll_door_3</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>197</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_mexanik_open_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Avto_open_door_button</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_mexanik_open_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>avto_open_NULL_door_pushButton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_mexanik_open_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>avto_open_full_door_pushButton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>mexanik_open_door_button</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>avto_open_NULL_door_pushButton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>avto_open_full_door_pushButton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>60</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>206</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_NULL_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>avto_open_full_door_pushButton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>220</x>
+     <y>116</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_NULL_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Avto_open_door_button</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_NULL_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>mexanik_open_door_button</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>93</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>219</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_fukll_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>avto_open_NULL_door_pushButton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_fukll_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Avto_open_door_button</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>222</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_avto_open_fukll_door_3</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>mexanik_open_door_button</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>223</x>
+     <y>21</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mexanik_open_door_button</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_mexanik_open_door</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Avto_open_door_button</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_avto_open_door</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>58</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>63</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>avto_open_NULL_door_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_avto_open_NULL_door</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>140</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>avto_open_full_door_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>checkBox_avto_open_fukll_door</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>111</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_KO</sender>
+   <signal>editingFinished()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>301</x>
+     <y>202</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
